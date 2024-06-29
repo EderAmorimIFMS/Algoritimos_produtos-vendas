@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos e Vendas JS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            margin-top: 50px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            width: 160px;
+        }
+
+        #btn-adicionarProduto, #btn-registrarVenda{
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        #btn-atualizarEstoque {
+            background-color: #2196F3;
+            color: white;
+        }
+
+        #btn-relatorioProdutos {
+            background-color: #ff9800;
+            color: white;
+        }
+
+        #btn-relatorioVendas {
+            background-color: #9c27b0;
+            color: white;
+        }
+
+        #container {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr); /* Define 6 colunas com largura igual */
+            gap: 20px;
+            margin-top: 40px;
+            width: 90%;
+        }
+
+        .card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card p {
+            margin: 5px 0;
+        }
+
+        .titulo {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .texto {
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><button id="btn-adicionarProduto">CADASTRAR PRODUTO</button></li>
+        <li><button id="btn-registrarVenda">REGISTRAR VENDA</button></li>
+        <li><button id="btn-atualizarEstoque">ATUALIZAR ESTOQUE</button></li>
+        <li><button id="btn-relatorioProdutos">RELATORIO PRODUTOS</button></li>
+        <li><button id="btn-relatorioVendas">RELATORIO VENDAS</button></li>
+    </ul>
+
+    <div id="container"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
